@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="black" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Red circle with shadow -->
+  <circle cx="32" cy="32" r="30" fill="#FF0000" filter="url(#shadow)"/>
+  <!-- White text, more accurately centered -->
+  <text x="32" y="34" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="bold">DB</text>
+</svg>

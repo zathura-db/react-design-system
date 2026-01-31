@@ -1,0 +1,26 @@
+import "./globals.css";
+import type { Preview } from "@storybook/nextjs-vite";
+
+// Importing your app globals ensures Tailwind utilities are available in stories.
+const preview: Preview = {
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+      actions: { disable: true },
+      interactions: { disable: true },
+      visualTesting: { disable: true },
+      accessability: { disable: true },
+    },
+    a11y: {
+      // 'todo' - show a11y violations in the test UI only
+      // 'error' - fail CI on a11y violations
+      // 'off' - skip a11y checks entirely
+      test: "off",
+    },
+  },
+};
+
+export default preview;

@@ -1,0 +1,95 @@
+# Custom Licence — Attribution-NonCommercial 4.0 International
+
+**Copyright © [Year] [Your Name or Your Organization]**
+
+This work is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** licence.
+
+---
+
+## 1. Definitions
+
+In this licence:
+
+**Licensed Material**  
+The creative work (text, images, data, etc.) that you, the Licensor, are licensing under this Public Licence.
+
+**Licensed Rights**  
+All copyright and similar rights that apply to the Licensed Material that you have authority to license.
+
+**NonCommercial**  
+Not primarily intended for or directed toward commercial advantage or monetary compensation.
+
+**You**  
+The person or entity exercising the Licensed Rights under this Public Licence.
+
+---
+
+## 2. Licence Grant
+
+Subject to the terms and conditions below:
+
+1. The Licensor grants worldwide, royalty-free, non-exclusive, irrevocable permission to:
+   - **Reproduce** and **Share** the Licensed Material in any medium or format for **NonCommercial** purposes only.
+   - **Produce, Reproduce, and Share Adapted Material** based on the Licensed Material for **NonCommercial** purposes only.
+
+2. These rights apply to all media and formats, whether existing now or created in the future.
+
+3. You may not apply legal terms or technological measures that restrict others from exercising the rights granted by this licence.
+
+---
+
+## 3. Conditions
+
+Anyone exercising the Licensed Rights must comply with the following:
+
+### Attribution
+
+When you share the Licensed Material (including adaptations), you must:
+
+1. Give appropriate credit, including:
+   - The creator’s name;
+   - The title of the work, if provided;
+   - A copyright notice;
+   - A licence notice;
+   - A disclaimer of warranties notice;
+   - A link or URI to the Licensed Material, where reasonably practicable.
+
+2. Provide a link to the licence:  
+   <https://creativecommons.org/licenses/by-nc/4.0/>
+
+3. Indicate if changes were made and retain any previous modification notices.
+
+4. Not imply endorsement by the Licensor.
+
+---
+
+## 4. Sui Generis Database Rights
+
+Where applicable, the Licensor grants the right to extract, reuse, reproduce, and share all or a substantial portion of the database for **NonCommercial** purposes only.
+
+---
+
+## 5. Disclaimer of Warranties and Limitation of Liability
+
+The Licensed Material is provided **“as-is”** and **“as available”**, without warranties of any kind.  
+The Licensor shall not be liable for any damages arising from use of the Licensed Material.
+
+---
+
+## 6. Term and Termination
+
+This licence applies for the duration of copyright in the Licensed Material.
+
+If you fail to comply with the terms, your rights under this licence automatically terminate.  
+If the violation is cured within 30 days of discovery, your rights are automatically reinstated.
+
+---
+
+## How to Apply This Licence
+
+Include the following notice with your work:
+
+```text
+© [Year] [Your Name or Organization].
+Licensed under the Creative Commons Attribution-NonCommercial 4.0 International Licence.
+https://creativecommons.org/licenses/by-nc/4.0/

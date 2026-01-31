@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  padding-right: 1%;
+  overflow: hidden;
+}
+
+.container .text {
+  position: relative;
+  color: #ed0101;
+  font-size: 6vh;
+  font-weight: 600;
+}
+
+.container .text.first-text {
+  color: #fff;
+}
+
+/* Typing mask (NO border here) */
+.text.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #131a25;
+  animation:
+    typing 1s steps(10) forwards,
+    removeMask 0s linear 1s forwards;
+  /* fires after typing */
+}
+
+/* Single cursor (flashes forever) */
+.text.sec-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-left: 2px solid #4070f4;
+  animation:
+    cursorMove 1s steps(10) forwards,
+    cursorFlash 0.7s infinite;
+}
+
+/* Cursor moves with typing */
+@keyframes cursorMove {
+  to {
+    left: 100%;
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
+
+/* Cursor flashing animation */
+@keyframes cursorFlash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes removeMask {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

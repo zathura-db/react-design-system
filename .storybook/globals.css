@@ -1,0 +1,20 @@
+@tailwind base;
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+h1 {
+  font-size: 4vh;
+}
+h2 {
+  font-size: 5vh;
+  font-weight: bold;
+  line-height: 1;
+}
