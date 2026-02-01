@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { tv } from "tailwind-variants/lite";
 
 const linkVariants = tv({
