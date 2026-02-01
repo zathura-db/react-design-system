@@ -1,10 +1,10 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { LinkText } from "./Link";
+import Link from "./Link";
 
 const meta: Meta = {
   title: "Components/Link",
-  component: LinkText,
+  component: Link,
   parameters: { layout: "centered" },
 };
 
@@ -27,9 +27,9 @@ export const Default: Story = {
     <Wrapper>
       <p className="text-lg">
         This is an example link:{" "}
-        <LinkText href="#" linkColour="red">
+        <Link href="#" linkColour="red">
           Visit my stack
-        </LinkText>
+        </Link>
       </p>
     </Wrapper>
   ),
@@ -40,9 +40,9 @@ export const BoldRed: Story = {
     <Wrapper>
       <p className="text-lg">
         Bold red link:{" "}
-        <LinkText href="#" linkColour="red" fontWeight="bold">
+        <Link href="#" linkColour="red" fontWeight="bold">
           Bold Link
-        </LinkText>
+        </Link>
       </p>
     </Wrapper>
   ),
@@ -53,9 +53,9 @@ export const BlackNormal: Story = {
     <Wrapper>
       <p className="text-lg">
         Black link:{" "}
-        <LinkText href="#" linkColour="black">
+        <Link href="#" linkColour="black">
           Black Link
-        </LinkText>
+        </Link>
       </p>
     </Wrapper>
   ),
@@ -66,9 +66,9 @@ export const WhiteOnDark: Story = {
     <Wrapper dark>
       <p className="text-lg">
         White link on dark background:{" "}
-        <LinkText href="#" linkColour="white" fontWeight="bold">
+        <Link href="#" linkColour="white" fontWeight="bold">
           White Link
-        </LinkText>
+        </Link>
       </p>
     </Wrapper>
   ),

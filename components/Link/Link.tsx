@@ -30,7 +30,7 @@ type LinkProps = {
   className?: string;
 };
 
-export function LinkText({
+export default function Link({
   onClick,
   href,
   children,

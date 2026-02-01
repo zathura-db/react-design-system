@@ -13,7 +13,7 @@ import { useCallback, useEffect, useState } from "react";
  * NOTE: <section> will require an ID to enable anchor navigation.
  *
  *  */
-export function Pagination() {
+export default function Pagination() {
   const [sectionElements, setSectionElements] = useState<HTMLElement[]>([]);
   const [currentSection, setCurrentSection] = useState("");
 
