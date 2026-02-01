@@ -1,6 +1,5 @@
 // @ts-ignore
 import "./StarBackground.css";
-import { useIsMobile } from "@/hooks/useIsMobile";
 import { useMemo, useRef, useLayoutEffect, useState } from "react";
 
 /**
@@ -33,11 +32,11 @@ type Props = {
   layerConfigs?: LayerConfig[];
 };
 /**
- * StarfieldSection component to display a starfield background with three layers of random stars.
+ * StarBackground component to display a starfield background with three layers of random stars.
  * Each layer has configurable number of stars, size, animation duration, and color range.
  * This component is based on https://codepen.io/sarazond/pen/LYGbwj
  */
-export default function StarfieldSection({
+export default function StarBackground({
   children,
   layerConfigs = [
     { count: 500, size: 1, duration: 50, colorRange: ["#ffffff", "#ffcccc"] },

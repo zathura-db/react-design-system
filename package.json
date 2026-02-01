@@ -1,6 +1,7 @@
 {
   "name": "zathura-react-design-system",
   "version": "0.1.0",
+  "description": "A modern React component library built with Tailwind CSS, and TypeScript",
   "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,6 +25,24 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zathura-db/react-design-system.git"
+  },
+  "author": "zathura-db",
+  "keywords": [
+    "react",
+    "design-system",
+    "components",
+    "ui",
+    "tailwind",
+    "typescript",
+    "storybook"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/zathura-db/react-design-system/issues"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -62,8 +62,6 @@ function App() {
       <Button variant="primary" onClick={() => alert("Clicked!")}>
         Click Me
       </Button>
-
-      <Card title="Welcome" description="Get started with our design system" />
     </div>
   );
 }
@@ -81,7 +79,7 @@ For implementation examples, please see [Zathura React Design System Github](htt
 ### Interactive Elements
 
 - **Button** - Multiple variants and sizes with loading states
-- **Link** - Styled link component with Next.js support
+- **LinkText** - Styled link component with Next.js support
 - **DropDown** - Accessible dropdown menu
 - **DirectionButtons** - Navigation direction controls
 - **Pagination** - Customizable pagination controls
@@ -130,7 +128,7 @@ npm run lint
 - **React 18** - Modern React with hooks
 - **TypeScript** - Static type checking
 - **Tailwind CSS** - Utility-first CSS framework
-- **Storybook 8** - Component documentation
+- **Storybook 10** - Component documentation
 
 ## 📄 License
 

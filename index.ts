@@ -12,7 +12,7 @@ export { default as Link } from "./components/Link/Link";
 export { default as Pagination } from "./components/Pagination/Pagination";
 export { default as ProjectTile } from "./components/ProjectTile/ProjectTile";
 export { default as Section } from "./components/Section/Section";
-export { default as StarfieldSection } from "./components/StarBackground/StarBackground";
+export { default as StarBackground } from "./components/StarBackground/StarBackground";
 export { default as Timeline } from "./components/Timeline/Timeline";
 
 // Hooks
