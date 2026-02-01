@@ -1,4 +1,4 @@
-name: Publish to NPM
+name: Build and Publish to NPM
 
 on:
   push:
@@ -9,8 +9,12 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      id-token: write
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -25,7 +29,5 @@ jobs:
       - name: Build package
         run: npm run build
 
-      - name: Publish to NPM
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish to NPM with provenance
+        run: npm publish --provenance --access public

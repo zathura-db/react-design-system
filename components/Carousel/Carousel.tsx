@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 import InformationCard, { DataCard } from "../InformationCard/InformationCard";
 import HiddenInformationCard from "../InformationCard/HiddenInformationCard";
-import DirectionButtons from "../DirectionButtons.tsx/DirectionButtons";
+import DirectionButtons from "../DirectionButtons/DirectionButtons";
 
 const carouselStyles = tv({
   slots: {
