@@ -1,6 +1,6 @@
 {
   "name": "zathura-react-design-system",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A modern React component library built with Tailwind CSS, and TypeScript",
   "private": false,
   "main": "./dist/index.js",
