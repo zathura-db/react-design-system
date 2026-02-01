@@ -26,17 +26,6 @@ yarn add @zathura-db/react-design-system
 pnpm add @zathura-db/react-design-system
 ```
 
-### Peer Dependencies
-
-This package requires the following peer dependencies:
-
-```json
-{
-  "react": "^18.0.0",
-  "react-dom": "^18.0.0"
-}
-```
-
 ### Tailwind CSS Setup
 
 If using Tailwind CSS, add the package to your `tailwind.config.js`:
@@ -54,15 +43,14 @@ module.exports = {
 ## 🚀 Quick Start
 
 ```tsx
-import { Button, Card } from "@zathura-db/react-design-system";
+import { Button } from "@zathura-db/react-design-system";
 
 function App() {
   return (
     <div>
-      <Button variant="primary" onClick={() => alert("Clicked!")}>
+      <Button baseColour="orange" buttonSize="large" onClick={() => alert("Clicked!")}>
         Click Me
       </Button>
-    </div>
   );
 }
 ```
