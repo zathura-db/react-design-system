@@ -1,122 +1,150 @@
 # React Design System
 
-A comprehensive React component library built with TypeScript, Tailwind CSS, and Material-UI.
+A comprehensive, production-ready React component library built with TypeScript and Tailwind CSS. Designed for modern web applications with a focus on accessibility, performance, and developer experience.
 
-## 📦 Components
+[![npm version](https://img.shields.io/npm/v/@zathura-db/react-design-system.svg)](https://www.npmjs.com/package/@zathura-db/react-design-system)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-This design system includes the following components:
+## ✨ Features
 
-- **AnimatedText** - Animated text effects
-- **Button** - Customizable button component
-- **Carousel** - Image/content carousel
-- **Chart** - Data visualization charts
-- **DirectionButtons** - Navigation direction controls
-- **DropDown** - Dropdown menu component
-- **Footer** - Page footer component
-- **InformationCard** - Card components for displaying information
-- **LayoutNavigation** - Layout navigation wrapper
-- **Link** - Styled link component
-- **Navigation** - Main navigation component
-- **Pagination** - Pagination controls
-- **ProjectTile** - Project display tiles
-- **Section** - Page section wrapper
-- **StarBackground** - Animated star background
-- **Timeline** - Timeline component
+- 🎨 **16+ Production-Ready Components** - Comprehensive component library
+- 📘 **TypeScript First** - Full type safety and IntelliSense support
+- 🎭 **Storybook Documentation** - Interactive component playground
+- 🎯 **Tailwind CSS** - Utility-first styling with customization
 
-## 🚀 Getting Started
-
-### Installation
+## 📦 Installation
 
 ```bash
+npm install @zathura-db/react-design-system
+```
+
+```bash
+yarn add @zathura-db/react-design-system
+```
+
+```bash
+pnpm add @zathura-db/react-design-system
+```
+
+### Tailwind CSS Setup
+
+If using Tailwind CSS, add the package to your `tailwind.config.js`:
+
+```javascript
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@zathura-db/react-design-system/**/*.{js,ts,jsx,tsx}",
+  ],
+  // ...rest of your config
+};
+```
+
+## 🚀 Quick Start
+
+```tsx
+import { Button } from "@zathura-db/react-design-system";
+
+function App() {
+  return (
+    <div>
+      <Button baseColour="orange" buttonSize="large" onClick={() => alert("Clicked!")}>
+        Click Me
+      </Button>
+  );
+}
+```
+
+For implementation examples, please see [Zathura React Design System Github](https://github.com/zathura-db/react-design-system) each component has stories which outline its usage.
+
+## 📚 Components
+
+### Layout
+
+- **Footer** - Customizable page footer
+- **Section** - Page section wrapper with styling options
+
+### Interactive Elements
+
+- **Button** - Multiple variants and sizes with loading states
+- **LinkText** - Styled link component with Next.js support
+- **DropDown** - Accessible dropdown menu
+- **DirectionButtons** - Navigation direction controls
+- **Pagination** - Customizable pagination controls
+
+### Content Display
+
+- **InformationCard** - Card components for displaying information
+- **ProjectTile** - Project display tiles with hover effects
+- **Timeline** - Vertical/horizontal timeline component
+- **Carousel** - Image/content carousel with controls
+- **Chart** - Data visualization charts (powered by Chart.js)
+
+### Visual Effects
+
+- **AnimatedText** - Text animation effects
+- **StarBackground** - Animated particle background
+
+## 🔧 Development
+
+### Clone and Install
+
+```bash
+git clone https://github.com/zathura-db/react-design-system.git
+cd react-design-system
 npm install
 ```
 
-## 📚 Storybook
-
-This project uses Storybook for component development and documentation.
-
-### Running Storybook
-
-Start the Storybook development server:
+### Available Scripts
 
 ```bash
+# Start Storybook development server
 npm run storybook
-```
 
-This will start Storybook at [http://localhost:6006](http://localhost:6006)
-
-### Building Storybook
-
-To build a static version of Storybook:
-
-```bash
+# Build Storybook static site
 npm run build-storybook
-```
 
-The static files will be generated in the `storybook-static` directory.
+# Build the package
+npm run build
 
-### Using Storybook
-
-1. **Browse Components**: Navigate through the sidebar to explore available components
-2. **View Stories**: Each component has multiple stories showcasing different states and variants
-3. **Interactive Controls**: Use the Controls addon to modify component props in real-time
-4. **Responsive Testing**: Test components at different viewport sizes using the viewport toolbar
-5. **Documentation**: View component documentation, props, and usage examples in the Docs tab
-
-### Writing Stories
-
-Stories are located alongside their components (e.g., `Button/Button.stories.ts`). To create a new story:
-
-```typescript
-import type { Meta, StoryObj } from "@storybook/react";
-import { YourComponent } from "./YourComponent";
-
-const meta: Meta<typeof YourComponent> = {
-  title: "Components/YourComponent",
-  component: YourComponent,
-  tags: ["autodocs"],
-};
-
-export default meta;
-type Story = StoryObj<typeof YourComponent>;
-
-export const Default: Story = {
-  args: {
-    // your props here
-  },
-};
-```
-
-## 🧪 Testing
-
-Run tests with Vitest:
-
-```bash
-npm run test
+# Lint code
+npm run lint
 ```
 
 ## 🛠️ Tech Stack
 
-- **React 18** - UI framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first styling
-- **Material-UI** - Component library
-- **Storybook** - Component development and documentation
-- **Vitest** - Unit testing
-- **Next.js** - React framework
+- **React 18** - Modern React with hooks
+- **TypeScript** - Static type checking
+- **Tailwind CSS** - Utility-first CSS framework
+- **Storybook 10** - Component documentation
 
-## 📝 License
+## 📄 License
 
 This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+
+**Commercial Use**: For commercial licensing options, please raise issue using github.
 
 See [licence.txt](./licence.txt) for the full license text.
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+We welcome contributions! Please follow these steps:
 
-**Note**: Direct pushes to the `main` branch are restricted. All contributions must be made through pull requests.
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Make your changes and add tests
+4. Commit your changes: `git commit -m 'Add amazing feature'`
+5. Push to the branch: `git push origin feature/amazing-feature`
+6. Open a Pull Request
+
+**Note**: Direct pushes to the `master` branch are restricted. All contributions must be made through pull requests.
+
+## 🐛 Bug Reports
+
+Found a bug? Please [open an issue](https://github.com/zathura-db/react-design-system/issues) with:
+
+- Description of the bug
+- Steps to reproduce
+- Expected behavior
+- Screenshots (if applicable)
+- Environment details (OS, browser, Node version)

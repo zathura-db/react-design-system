@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import StarfieldSection from "./StarBackground";
+import StarBackground from "./StarBackground";
 
 type Args = {
   children: string;
@@ -23,7 +23,7 @@ type Args = {
 
 const meta: Meta<Args> = {
   title: "Components/StarBackground",
-  component: StarfieldSection,
+  component: StarBackground,
   parameters: { layout: "fullscreen" },
   argTypes: {
     children: { control: "text" },
@@ -79,12 +79,12 @@ const Template = (args: Args) => {
 
   return (
     <div style={{ height: "700px" }}>
-      <StarfieldSection layerConfigs={layerConfigs}>
+      <StarBackground layerConfigs={layerConfigs}>
         <div className="px-4">
           <h1 className="text-4xl font-bold">Starfield Preview</h1>
           <p className="mt-4 max-w-2xl">{args.children}</p>
         </div>
-      </StarfieldSection>
+      </StarBackground>
     </div>
   );
 };

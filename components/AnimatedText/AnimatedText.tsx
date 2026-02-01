@@ -14,7 +14,10 @@ type AnimatedTextProps = {
  * @param prefix - Optional static text prefix (not animated)
  * @param textContent - Main text content to be animated (up to 6 characters)
  */
-export function AnimatedText({ prefix, textContent }: AnimatedTextProps) {
+export default function AnimatedText({
+  prefix,
+  textContent,
+}: AnimatedTextProps) {
   return (
     <div className="container">
       {prefix ? <span className="text first-text">{prefix}</span> : null}
